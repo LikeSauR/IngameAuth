@@ -1,0 +1,6 @@
+name: IngameAuth
+version: '1.0'
+main: com.like_it_smp.ingame_auth.IngameAuth
+api-version: '1.21'
+authors: [ LikeSauR ]
+description: Makes players enter passwords that they set up. Prevents pirates from logging in as eachother simply by starting up Minecraft with a different nickname.
