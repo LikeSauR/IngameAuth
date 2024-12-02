@@ -1,6 +1,7 @@
 package com.like_it_smp.ingame_auth;
 
 import org.bukkit.entity.*;
+import org.bukkit.inventory.meta.*;
 
 import java.net.*;
 
@@ -17,9 +18,23 @@ public class User {
         throw new UnsupportedOperationException();
     }
 
+    public Lock enlock() {
+        throw new UnsupportedOperationException();
+    }
+
+    public boolean passwordMatches(BookMeta inputField) {
+        throw new UnsupportedOperationException();
+    }
+
     public enum IpTrust {
         NEVER,
         UNVERIFIED,
         VERIFIED
+    }
+
+    public static final class Lock {
+        public void unlock() {
+            throw new UnsupportedOperationException();
+        }
     }
 }
