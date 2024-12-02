@@ -33,6 +33,10 @@ public class User {
     }
 
     public static final class Lock {
+        public Lock(Player player) {
+            throw new UnsupportedOperationException();
+        }
+
         public void unlock() {
             throw new UnsupportedOperationException();
         }
