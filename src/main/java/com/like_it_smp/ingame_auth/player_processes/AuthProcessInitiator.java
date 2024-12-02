@@ -62,12 +62,14 @@ public final class AuthProcessInitiator implements Listener {
     }
 
     public static void initialize() {
+        checkState(IngameAuth.isInitializing());
         checkState(instance == null);
         instance = new AuthProcessInitiator();
         getPluginManager().registerEvents(instance, IngameAuth.plugin());
     }
 
     public static void uninitialize() {
+        checkState(IngameAuth.isUninitializing());
         checkState(instance != null);
         HandlerList.unregisterAll(instance);
         instance = null;
